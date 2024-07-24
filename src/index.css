@@ -6,6 +6,12 @@
   /* Colors */
 
   /* Font Families */
+  --grotesk: "Hanken Grotesk", sans-serif;
+  --inter: "Inter", sans-serif;
+  --jost: "Jost", sans-serif;
+  --manrope: "Manrope", sans-serif;
+  --openSans: "Open Sans", sans-serif;
+  --poppins: "Poppins", sans-serif;
 }
 
 /* Reset */

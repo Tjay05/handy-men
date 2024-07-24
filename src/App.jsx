@@ -6,6 +6,8 @@ import searchIcon from "./assets/icons/search.svg";
 import logo from "./assets/icons/logo.svg";
 import phoneIcon from "./assets/icons/phone.svg";
 import emailIcon from "./assets/icons/email.svg";
+import handshake from "./assets/images/handshake.png"
+import constructor from "./assets/images/constructor.png"
 
 function App() {
   return (
@@ -50,7 +52,7 @@ function App() {
           <div className="container">
             <div className="navContainer">
               <ul className="navbar">
-                <li>Home</li>
+                <li><a href="#aboutUs">Home</a></li>
                 <li>About Us</li>
                 <li>Services</li>
                 <li>Testimonials</li>
@@ -69,6 +71,23 @@ function App() {
             <p className='h3'>Workers you can trust, work you can rely on</p>
           </div>
           <button>Sign Up</button>
+        </section>
+        <section id="aboutUs">
+          <h2>ABOUT US</h2>
+          <div className="aboutBox">
+            <img src={handshake} alt="A happy deal" />
+            <div className="aboutDetails">
+              <h3>Lorem Ipsum</h3>
+              <p>Lorem ipsum dolor sit amet consectetur. Sed porttitor velit maecenas congue hendrerit nulla ac tortor ullamcorper. Bibendum convallis eu vel nisl orci vitae eget. Egestas suscipit aenean sit metus risus mauris ornare. Pulvinar congue malesuada sapien convallis. Nunc sed volutpat viverra tortor in. A egestas aenean orci sed </p>
+            </div>
+          </div>
+          <div className="aboutBox">
+            <img src={constructor} alt="Constructor worker" />
+            <div className="aboutDetails">
+              <h3>Lorem Ipsum</h3>
+              <p>Lorem ipsum dolor sit amet consectetur. Sed porttitor velit maecenas congue hendrerit nulla ac tortor ullamcorper. Bibendum convallis eu vel nisl orci vitae eget. Egestas suscipit aenean sit metus risus mauris ornare. Pulvinar congue malesuada sapien convallis. Nunc sed volutpat viverra tortor in. A egestas aenean orci sed </p>
+            </div>
+          </div>
         </section>
       </main>
     </>

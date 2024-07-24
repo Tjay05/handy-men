@@ -61,6 +61,16 @@ function App() {
           </div>
         </nav>
       </header>
+      <main>
+        <section id="home">
+          <div className="sectionHead">
+            <h1>Linking Hirers and Labourers </h1>
+            <p className='h2'>Both Unskilled and Semi-skilled labourers</p>
+            <p className='h3'>Workers you can trust, work you can rely on</p>
+          </div>
+          <button>Sign Up</button>
+        </section>
+      </main>
     </>
   )
 }

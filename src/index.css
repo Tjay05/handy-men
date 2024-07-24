@@ -4,6 +4,21 @@
 /* Variables */
 :root {
   /* Colors */
+  /* Primary Colors */
+  --green: hsla(164, 42%, 14%, 1);
+  --light-green: hsla(178, 87%, 21%, 1);
+  --lighter-green: hsla(164, 32%, 36%, 1);
+
+  /* Neutral Colors */
+  --white: hsla(0, 0%, 100%, 1);
+  --black: hsla(0, 0%, 0%, 1);
+  --head-black: hsla(76, 20%, 11%, 1);
+  --dark-ash: hsla(0, 0%, 38%, 1);
+  --ash: hsla(0, 0%, 46%, 1);
+  --light-ash: hsla(0, 0%, 50%, 1);
+  --grey: hsla(74, 7%, 37%, 1);
+  --footer-ash: hsla(210, 6%, 60%, 1);
+
 
   /* Font Families */
   --grotesk: "Hanken Grotesk", sans-serif;

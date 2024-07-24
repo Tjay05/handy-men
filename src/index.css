@@ -11,6 +11,7 @@
 
   /* Neutral Colors */
   --white: hsla(0, 0%, 100%, 1);
+  --blur-white: hsla(0, 0%, 97%, 1);
   --black: hsla(0, 0%, 0%, 1);
   --head-black: hsla(76, 20%, 11%, 1);
   --dark-ash: hsla(0, 0%, 38%, 1);
@@ -44,6 +45,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
 /* Base Styles */
 body {
   background-color: var(--white);
+  color: var(--black);
 }
 
 a {
@@ -51,7 +53,7 @@ a {
   color: inherit;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -77,4 +79,127 @@ img {
 .container {
   width: 90%;
   margin-inline: auto;
+}
+
+/* Desktop Styles */
+/* Header */
+/* Top Header */
+header .topHeader {
+  background-color: var(--blur-white);
+  width: 100%;
+  font-family: var(--poppins);
+  padding-block: .5rem;
+  font-size: 14px;
+}
+
+header .topHeader > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .topHeader > .container ul {
+  display: flex;
+  gap: .8rem;
+}
+
+/* Mid Header */
+header .midHeader {
+  width: 100%;
+  font-family: var(--poppins);
+  background-color: var(da);
+  padding-block: .5rem;
+}
+
+header .midHeader > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .midHeader > .container .contactSection {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.midHeader > .container .contactSection .contactContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.contactSection .contactContainer .contactInfo p {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.3rem;
+}
+
+.contactSection .contactContainer .contactInfo p.lighText {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--light-ash);
+}
+
+header .midHeader > .container .searchContainer {
+  position: relative;
+  width: 25%;
+}
+
+header .midHeader > .container .searchContainer input {
+  padding-inline: 1.5rem;
+  border-radius: 20px;
+  padding-block: .7rem;
+  font-family: var(--poppins);
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+header .midHeader > .container .searchContainer img {
+  position: absolute;
+  top: 24%;
+  right: 10px;
+}
+
+/* Navbar */
+header nav.nav {
+  width: 100%;
+  background-color: var(--green);
+  color: var(--white);
+  font-family: var(--poppins);
+  font-weight: 400;
+}
+
+header nav.nav > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+header nav.nav > .container .navContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 72%;
+}
+
+header nav.nav > .container .navContainer ul.navbar {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 20px;
+  align-self: center;
+  margin-block: .5rem;
+}
+
+header nav.nav > .container .navContainer ul.navbar a.active {
+  font-weight: 600;
+}
+
+header nav.nav > .container .navContainer button {
+  background-color: var(--light-green);
+  border: none;
+  color: var(--white);
+  font-family: inherit;
+  font-weight: 500;
+  padding-block: .8rem;
+  padding-inline: 1rem;
+  font-size: 16px;
 }

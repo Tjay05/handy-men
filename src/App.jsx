@@ -10,10 +10,47 @@ import handshake from "./assets/images/handshake.png"
 import tick from "./assets/icons/tick.svg";
 import clock from "./assets/icons/clock.svg"
 import mailIcon from "./assets/icons/mail.svg"
+import star from "./assets/icons/star.svg"
+import profilePic from "./assets/icons/lois.svg"
 import constructor from "./assets/images/constructor.png"
 import workers from "./assets/images/construction-workers.png"
+import { useState } from 'react';
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 function App() {
+  const [reviews, setReviews] = useState([
+    {
+      id: 1,
+      userName: "Lois Topins",
+      userDp: profilePic,
+      description: "Thanks to the ICT hub, our business has transformed and reached new heights!",
+    },
+    {
+      id: 2,
+      userName: "TopTea Topins",
+      userDp: profilePic,
+      description: "The training programs offered are top-notch and have significantly improved my skills.",
+    },
+  ]);
+  
+  const [swiper, setSwiper] = useState();
+
+  const handleSlideChange = (e) => {
+    swiper.slideNext();
+  };
+
+  const handlePrevClick = () => {
+    if (swiper && swiper.activeIndex > 0) {
+      swiper.slidePrev();
+    }
+  };
+
   return (
     <>
       <header>
@@ -139,6 +176,34 @@ function App() {
               </div>
             </div>
           </div>
+        </section>
+        <section id="testimonials">
+          <h2>What Our Clients Say About Us</h2>
+          <p>From Clients Or Partners, And Trainees</p>
+          <Swiper
+            module={[Navigation, Pagination]}
+            spaceBetween={100}
+            slidesPerView={2}
+            navigation
+            pagination={{ clickable: true }}
+            onSwiper={(instance) => setSwiper(instance)}
+            className='swiperContainer'
+          >
+            {reviews.map((review) => (
+              <SwiperSlide className='reviewBox' key={review.id}>
+                <div className="starRating">
+                  <img src={star} alt="Star" />
+                  <img src={star} alt="Star" />
+                  <img src={star} alt="Star" />
+                  <img src={star} alt="Star" />
+                  <img src={star} alt="Star" />
+                </div>
+                <p className="ratingText">{ review.description }</p>
+                <img src={ review.userDp } alt="User" />
+                <p className="user">{ review.userName }</p>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </section>
       </main>
     </>

@@ -475,3 +475,55 @@ main section#services .cta .hireWrap .signupContainer button {
   font-weight: 500;
   font-size: 20px;
 }
+
+/* Our Testimonial Section */
+main section#testimonials {
+  width: 90%;
+  margin-inline: auto;
+  margin-block: 2rem;
+  font-family: var(--manrope);
+  font-weight: 600;
+  text-align: center;
+}
+
+main section#testimonials h2 {
+  font-weight: 700;
+}
+
+main section#testimonials > p {
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--ash);
+  margin-block: 2rem;
+}
+
+main section#testimonials .swiperContainer {
+  margin-block: 5rem;
+  width: 79%;
+}
+
+.swiperContainer .reviewBox .starRating {
+  display: flex;
+  gap: .8rem;
+  justify-content: center;
+}
+
+.swiperContainer .reviewBox p.ratingText {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 42px;
+  font-family: var(--manrope);
+  color: hsla(0, 0%, 26%, 1);
+  margin-block: 2rem;
+}
+
+.swiperContainer .reviewBox img {
+  margin-block-end: .5rem;
+}
+
+.swiperContainer .reviewBox p {
+  font-family: var(--inter);
+  font-weight: 500;
+  font-size: 19px;
+  color: hsla(0, 0%, 46%, 1);
+}

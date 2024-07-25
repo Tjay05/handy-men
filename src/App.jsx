@@ -7,7 +7,11 @@ import logo from "./assets/icons/logo.svg";
 import phoneIcon from "./assets/icons/phone.svg";
 import emailIcon from "./assets/icons/email.svg";
 import handshake from "./assets/images/handshake.png"
+import tick from "./assets/icons/tick.svg";
+import clock from "./assets/icons/clock.svg"
+import mailIcon from "./assets/icons/mail.svg"
 import constructor from "./assets/images/constructor.png"
+import workers from "./assets/images/construction-workers.png"
 
 function App() {
   return (
@@ -52,7 +56,7 @@ function App() {
           <div className="container">
             <div className="navContainer">
               <ul className="navbar">
-                <li><a href="#aboutUs">Home</a></li>
+                <li><a href="#testimonials">Home</a></li>
                 <li>About Us</li>
                 <li>Services</li>
                 <li>Testimonials</li>
@@ -86,6 +90,53 @@ function App() {
             <div className="aboutDetails">
               <h3>Lorem Ipsum</h3>
               <p>Lorem ipsum dolor sit amet consectetur. Sed porttitor velit maecenas congue hendrerit nulla ac tortor ullamcorper. Bibendum convallis eu vel nisl orci vitae eget. Egestas suscipit aenean sit metus risus mauris ornare. Pulvinar congue malesuada sapien convallis. Nunc sed volutpat viverra tortor in. A egestas aenean orci sed </p>
+            </div>
+          </div>
+        </section>
+        <section id="services">
+          <h2>Our Services</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec gravida purus.</p>
+          <div className="serviceInfoContainer">
+            <div className="serviceInfoBox">
+              <img src={tick} alt="tick" />
+              <h3>Offer certified Workers</h3>
+              <p>We offer you workers who are certified under us</p>
+            </div>
+            <div className="serviceInfoBox">
+              <img src={clock} alt="clock" />
+              <h3>Lorem Ipsum vginduk</h3>
+              <p>idngu vus si lib gendulek jfbehbjf viverra tortor in</p>
+            </div>
+          </div>
+          <h3>Finding and hiring labour and workers is simple, safe and secure with HandyMen</h3>
+          <div className="serviceGuide">
+            <div className="stepCircles">
+              <h4>1</h4>
+              <p>Search a job to see who is available</p>
+            </div>
+            <div className="stepCircles">
+              <h4>2</h4>
+              <p>Review profiles and pick the best</p>
+            </div>
+            <div className="stepCircles">
+              <h4>3</h4>
+              <p>Set up an online agreement</p>
+            </div>
+            <div className="stepCircles">
+              <h4>4</h4>
+              <p>Get the job done and pay easily</p>
+            </div>
+          </div>
+          <div className="cta">
+            <img src={workers} alt="Construction workers" />
+            <div className="hireWrap">
+              <h3>In Need Of Handy Men? Sign Up Now</h3>
+              <p>Fringilla non proin nec in in lorem amet eget ac. Mauris.</p>
+              <div className="signupContainer">
+                <input type="email" placeholder='Email Address' />
+                <img src={mailIcon} alt="" />
+                <button>SignUp</button>
+              </div>
             </div>
           </div>
         </section>

@@ -6,6 +6,7 @@ import searchIcon from "./assets/icons/search.svg";
 import logo from "./assets/icons/logo.svg";
 import phoneIcon from "./assets/icons/phone.svg";
 import emailIcon from "./assets/icons/email.svg";
+import phoneOutline from "./assets/icons/phone-outline.svg";
 import handshake from "./assets/images/handshake.png"
 import tick from "./assets/icons/tick.svg";
 import clock from "./assets/icons/clock.svg"
@@ -297,6 +298,62 @@ function App() {
           </div>
         </section>
       </main>
+      <footer>
+        <div className="container">
+          <div className="companyInfo">
+            <h2>.logo</h2>
+            <p className="info">Funding freemium long tail hypotheses first mover advantage assets ownership</p>
+            <div className="socialInfo">
+              <img src={mailIcon} alt="Email" />
+              <p>agensi@mail.com</p>
+            </div>
+            <div className="socialInfo">
+              <img src={phoneOutline} alt="Phone number" />
+              <p>+ 12 3456 7890</p>
+            </div>
+          </div>
+          <div className="faq">
+            <div className="info">
+              <h2>Services</h2>
+              <ul>
+                <li><a>Web Hosting</a></li>
+                <li><a>Domains</a></li>
+                <li><a>Premium Hosting</a></li>
+                <li><a>Private Server</a></li>
+                <li><a>Email Hosting</a></li>
+              </ul>
+            </div>
+            <div className="info">
+              <h2>Support</h2>
+              <ul>
+                <li><a>Pricing Plan</a></li>
+                <li><a>Documentation</a></li>
+                <li><a>Guide</a></li>
+                <li><a>Tutorial</a></li>
+              </ul>
+            </div>
+            <div className="info">
+              <h2>Company</h2>
+              <ul>
+                <li><a>About</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Join Us</a></li>
+                <li><a>Press</a></li>
+                <li><a>Partners</a></li>
+              </ul>
+            </div>
+            <div className="info">
+              <h2>Legal</h2>
+              <ul>
+                <li><a>Claim</a></li>
+                <li><a>Privacy</a></li>
+                <li><a>Terms</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p className="copyRight">Design with love © TanahAirStudio 2020. All right reserved</p>
+      </footer>
     </>
   )
 }

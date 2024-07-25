@@ -709,3 +709,64 @@ main section#contact .contactBox textarea {
   border-radius: 10px;
   font-style: italic;
 }
+
+/* Footer Styles */
+footer {
+  background-color: var(--green);
+  padding-block: 4rem;
+  font-family: var(--jost);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white);
+}
+
+footer > .container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 6rem;
+  border-bottom: 2px solid var(--footer-ash);
+}
+
+footer > .container .companyInfo {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  gap: 1rem;
+}
+
+footer > .container .companyInfo .socialInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block-end: 1rem;
+}
+
+footer > .container .faq {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer > .container .faq .info {
+  flex: 1 1 auto;
+}
+
+footer > .container .faq .info h2 {
+  font-size: 20px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--footer-ash);
+  margin-block-end: 1rem;
+}
+
+footer > .container .faq .info li {
+  margin-block-end: .5rem;
+}
+
+footer p.copyRight {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--footer-ash);
+  margin-block-start: 2rem;
+}

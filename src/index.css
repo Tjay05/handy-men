@@ -605,3 +605,44 @@ main section#team > .container button {
   padding: .7rem 3rem;
   gap: .6rem;
 }
+
+/* Benefits Section */
+main section#benefits {
+  background-color: var(--green);
+  width: 100%;
+}
+
+main section#benefits .benefitWrapper {
+  width: 80%;
+  margin-inline: auto;
+  padding-block: 4rem;
+  color: var(--white);
+  font-family: var(--manrope);
+  font-weight: 700;
+  text-align: center;
+}
+
+main section#benefits .benefitWrapper .benefitList {
+  margin-block: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+main section#benefits .benefitWrapper .benefitList .benefit {
+  display: flex;
+  /* margin-block: .5rem; */
+  font-size: 24px;
+  gap: .8rem;
+}
+
+main section#benefits .benefitWrapper button {
+  border: none;
+  background-color: var(--grey);
+  font-family: var(--grotesk);
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--white);
+  padding: .5rem 2rem;
+}

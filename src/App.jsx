@@ -13,6 +13,7 @@ import mailIcon from "./assets/icons/mail.svg"
 import star from "./assets/icons/star.svg"
 import chevron from "./assets/icons/chevron.svg"
 import profilePic from "./assets/icons/lois.svg"
+import roundTick from "./assets/icons/round-tick.svg"
 import constructor from "./assets/images/constructor.png"
 import workers from "./assets/images/construction-workers.png"
 import ceo from "./assets/images/prof.png"
@@ -97,7 +98,7 @@ function App() {
           <div className="container">
             <div className="navContainer">
               <ul className="navbar">
-                <li><a href="#testimonials">Home</a></li>
+                <li><a href="#benefits">Home</a></li>
                 <li>About Us</li>
                 <li>Services</li>
                 <li>Testimonials</li>
@@ -235,6 +236,54 @@ function App() {
               </div>
             </div>
             <button>Meet Our Team <img src={chevron} alt="Chevron" /></button>
+          </div>
+        </section>
+        <section id="benefits">
+          <div className="benefitWrapper">
+            <h2>Benefits Of Using Us</h2>
+            <div className="benefitList">
+              <div className="benefit">
+                <img src={roundTick} alt="Tick" />
+                <p>10,000+ Workers Across Nigeria</p>
+              </div>
+              <div className="benefit">
+                <img src={roundTick} alt="Tick" />
+                <p>10,000+ Workers Across Nigeria</p>
+              </div>
+              <div className="benefit">
+                <img src={roundTick} alt="Tick" />
+                <p>10,000+ Workers Across Nigeria</p>
+              </div>
+              <div className="benefit">
+                <img src={roundTick} alt="Tick" />
+                <p>10,000+ Workers Across Nigeria</p>
+              </div>
+              <div className="benefit">
+                <img src={roundTick} alt="Tick" />
+                <p>10,000+ Workers Across Nigeria</p>
+              </div>
+              <div className="benefit">
+                <img src={roundTick} alt="Tick" />
+                <p>10,000+ Workers Across Nigeria</p>
+              </div>
+              <div className="benefit">
+                <img src={roundTick} alt="Tick" />
+                <p>10,000+ Workers Across Nigeria</p>
+              </div>
+              <div className="benefit">
+                <img src={roundTick} alt="Tick" />
+                <p>10,000+ Workers Across Nigeria</p>
+              </div>
+              <div className="benefit">
+                <img src={roundTick} alt="Tick" />
+                <p>10,000+ Workers Across Nigeria</p>
+              </div>
+              <div className="benefit">
+                <img src={roundTick} alt="Tick" />
+                <p>10,000+ Workers Across Nigeria</p>
+              </div>
+            </div>
+            <button>Sign Up</button>
           </div>
         </section>
       </main>

@@ -11,9 +11,13 @@ import tick from "./assets/icons/tick.svg";
 import clock from "./assets/icons/clock.svg"
 import mailIcon from "./assets/icons/mail.svg"
 import star from "./assets/icons/star.svg"
+import chevron from "./assets/icons/chevron.svg"
 import profilePic from "./assets/icons/lois.svg"
 import constructor from "./assets/images/constructor.png"
 import workers from "./assets/images/construction-workers.png"
+import ceo from "./assets/images/prof.png"
+import lawyer from "./assets/images/lawyer.png"
+import politician from "./assets/images/chief.png"
 import { useState } from 'react';
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -204,6 +208,34 @@ function App() {
               </SwiperSlide>
             ))}
           </Swiper>
+        </section>
+        <section id="team">
+          <div className="container">
+            <div className="teamWrap">
+              <div className="teamMembers">
+                <img src={ceo} alt="CEO" />
+                <div className="teamPost">
+                  <p>LUKMAN ABUBAKAR</p>
+                  <p>CEO</p>
+                </div>
+              </div>
+              <div className="teamMembers">
+                <img src={lawyer} alt="Barrister" />
+                <div className="teamPost">
+                  <p>BARR. ABBAS ALIYU</p>
+                  <p>LEGAL</p>
+                </div>
+              </div>
+              <div className="teamMembers">
+                <img src={politician} alt="Operational manager" />
+                <div className="teamPost">
+                  <p>DASHE JOSHUA YAKNAN</p>
+                  <p>OPERATIONAL MANAGER</p>
+                </div>
+              </div>
+            </div>
+            <button>Meet Our Team <img src={chevron} alt="Chevron" /></button>
+          </div>
         </section>
       </main>
     </>

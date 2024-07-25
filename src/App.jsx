@@ -286,6 +286,16 @@ function App() {
             <button>Sign Up</button>
           </div>
         </section>
+        <section id="contact">
+          <h2>Send Us A Message Now</h2>
+          <div className="contactBox">
+            <div className="signupContainer">
+              <input type="email" placeholder='Email Address' />
+              <img src={mailIcon} alt="" />
+            </div>
+            <textarea name="" placeholder='Type your message here...' id="" cols="30" rows="10"></textarea>
+          </div>
+        </section>
       </main>
     </>
   )

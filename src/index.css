@@ -20,7 +20,6 @@
   --grey: hsla(74, 7%, 37%, 1);
   --footer-ash: hsla(210, 6%, 60%, 1);
 
-
   /* Font Families */
   --grotesk: "Hanken Grotesk", sans-serif;
   --inter: "Inter", sans-serif;
@@ -615,7 +614,7 @@ main section#benefits {
 main section#benefits .benefitWrapper {
   width: 80%;
   margin-inline: auto;
-  padding-block: 4rem;
+  padding-block: 8rem;
   color: var(--white);
   font-family: var(--manrope);
   font-weight: 700;
@@ -645,4 +644,68 @@ main section#benefits .benefitWrapper button {
   font-weight: 600;
   color: var(--white);
   padding: .5rem 2rem;
+}
+
+/* Contacts Section */
+main section#contact {
+  width: 80%;
+  margin-inline: auto;
+  margin-block: 12rem;
+  color: var(--black);
+  font-family: var(--manrope);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main section#contact h2 {
+  font-size: 64px;
+  color: hsla(0, 0%, 13%, 1);
+  text-align: left;
+  width: 23%;
+}
+
+main section#contact .contactBox {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--green);
+  width: 60%;
+  border-radius: 20px;
+  padding: 2rem 4rem;
+}
+
+main section#contact .contactBox .signupContainer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-block: 1rem;
+  gap: 1rem;
+}
+
+main section#contact .contactBox  .signupContainer input {
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  padding-inline-start: 3rem;
+  padding-block: .8rem;
+  font-size: 18px;
+  font-family: var(--inter);
+  font-weight: 500;
+  color: hsla(0, 0%, 74%, 1);
+}
+
+main section#contact .contactBox  .signupContainer img {
+  position: absolute;
+  left: 10px;
+  top: 16%;
+}
+
+main section#contact .contactBox textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 16px;
+  font-family: var(--inter);
+  font-weight: 500;
+  border-radius: 10px;
+  font-style: italic;
 }

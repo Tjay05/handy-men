@@ -302,7 +302,7 @@ function App() {
         <div className="container">
           <div className="companyInfo">
             <h2>.logo</h2>
-            <p className="info">Funding freemium long tail hypotheses first mover advantage assets ownership</p>
+            <p className="info">Funding freemium long wagwan tail hypotheses first mover advantage assets ownership</p>
             <div className="socialInfo">
               <img src={mailIcon} alt="Email" />
               <p>agensi@mail.com</p>

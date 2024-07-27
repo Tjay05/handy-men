@@ -20,7 +20,7 @@ import workers from "./assets/images/construction-workers.png"
 import ceo from "./assets/images/prof.png"
 import lawyer from "./assets/images/lawyer.png"
 import politician from "./assets/images/chief.png"
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -45,6 +45,8 @@ function App() {
     },
   ]);
   
+  const [currentHeader, setCurrentHeader] = useState("one");
+  
   const [swiper, setSwiper] = useState();
 
   const handleSlideChange = (e) => {
@@ -56,6 +58,19 @@ function App() {
       swiper.slidePrev();
     }
   };
+
+  useEffect(() => {
+    const headers = ["one", "two", "three", "four"];
+    let currentIndex = 0;
+    let interval;
+
+    interval = setInterval(() => {
+      currentIndex = (currentIndex + 1) % headers.length;
+      setCurrentHeader(headers[currentIndex]);
+    }, 2000);
+  
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
@@ -111,7 +126,7 @@ function App() {
         </nav>
       </header>
       <main>
-        <section id="home">
+        <section id="home" className={`${currentHeader}`}>
           <div className="sectionHead">
             <h1>Linking Hirers and Labourers </h1>
             <p className='h2'>Both Unskilled and Semi-skilled labourers</p>

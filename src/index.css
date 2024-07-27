@@ -213,12 +213,27 @@ main section#home {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: url(./assets/images/landing-page-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
   color: var(--white);
   font-family: var(--grotesk);
   font-weight: 600;
+}
+
+main section#home.one {
+  background-image: url(./assets/images/landing-page-bg1.png);
+}
+
+main section#home.two {
+  background-image: url(./assets/images/landing-page-bg2.png);
+}
+
+main section#home.three {
+  background-image: url(./assets/images/landing-page-bg3.png);
+}
+
+main section#home.four {
+  background-image: url(./assets/images/landing-page-bg4.png);
 }
 
 main section#home .sectionHead {

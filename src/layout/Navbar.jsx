@@ -6,6 +6,10 @@ import instagram from "../assets/icons/instagram.svg";
 import twitter from "../assets/icons/twitter.svg";
 import mailIcon from "../assets/icons/mail.svg";
 import phoneOutline from "../assets/icons/phone-outline.svg";
+import logo from "../assets/icons/logo.svg";
+import phoneIcon from "../assets/icons/phone.svg";
+import emailIcon from "../assets/icons/email.svg";
+import searchIcon from "../assets/icons/search.svg";
 
 const Navbar = () => {
   return (
@@ -50,11 +54,11 @@ const Navbar = () => {
           <div className="container">
             <div className="navContainer">
               <ul className="navbar">
-                <li><NavLink>Home</NavLink></li>
-                <li><NavLink>Hire Workers</NavLink></li>
-                <li><NavLink>My Workers</NavLink></li>
-                <li><NavLink>Payments</NavLink></li>
-                <li><NavLink>Help & FAQs</NavLink></li>
+                <li><NavLink to='Home'>Home</NavLink></li>
+                <li><NavLink to='/Hire-Workers' >Hire Workers</NavLink></li>
+                <li><NavLink to=''>My Workers</NavLink></li>
+                <li><NavLink to=''>Payments</NavLink></li>
+                <li><NavLink to=''>Help & FAQs</NavLink></li>
               </ul>
             </div>
           </div>

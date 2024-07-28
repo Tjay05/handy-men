@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { HashLoader } from "react-spinners";
 
 import mailIcon from "../../assets/icons/mail.svg"
@@ -11,7 +11,9 @@ const LoginScreen = () => {
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
-  }
+  };
+
+  const history = useNavigate();
 
   return (
     <div className="loginPage">
@@ -49,7 +51,7 @@ const LoginScreen = () => {
             </div>
             {/* <p className="err-mssg" >error</p> */}
             {/* <span className='exist'>Don&apos;t have an account, <Link to='/SignUp'>SignUp Here</Link></span> */}
-            <button>Continue</button>
+            <button onClick={() => history('/Home')} >Continue</button>
           </form>
           <p className="terms">By clicking “continue”, you agree to our User <u>Terms of Service</u> and <u>Privacy Policy</u></p>
           {/* <p><Link to="/ChangePassword">Forgot Password</Link></p> */}

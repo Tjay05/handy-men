@@ -20,7 +20,7 @@ const HomeScreen = () => {
         <section id="workers">
           <div className="infoWrap">
             <p>Find Workers and Labourers near you, for any kind of work</p>
-            <button>Hire Workers</button>
+            <button onClick={() => history('/Hire-Workers')}>Hire Workers</button>
           </div>
           <img src={builderWrap} alt="Builders" />
         </section>

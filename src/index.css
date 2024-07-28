@@ -8,6 +8,9 @@
   --green: hsla(164, 42%, 14%, 1);
   --light-green: hsla(178, 87%, 21%, 1);
   --lighter-green: hsla(164, 32%, 36%, 1);
+  --form-green: hsla(164, 23%, 69%, 1);
+  --red: hsla(0, 99%, 61%, 1);
+  --dark-blue: hsla(220, 42%, 14%, 1);
 
   /* Neutral Colors */
   --white: hsla(0, 0%, 100%, 1);
@@ -83,6 +86,148 @@ img {
 .container {
   width: 90%;
   margin-inline: auto;
+}
+
+/* Loader Styles */
+.loaded {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.loaded .loaderBox {
+  background: var(--white);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 70px;
+}
+
+/* Mobile Styles */
+/* Login PAge */
+.loginPage {
+  background: var(--green);
+  font-family: var(--grotesk);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Login Main */
+.loginPage main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginPage main h1 {
+  color: var(--white);
+}
+
+.loginPage main .form-field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--form-green);
+  padding: 2.5rem; 
+  border-radius: 18px;
+  max-width: 340px;
+  margin-block: 1rem 3rem;
+}
+
+.loginPage .form-field form {
+  color: var(--white);
+  font-weight: 400;
+  font-family: var(--inter);
+  width: 100%;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.loginPage .form-field form .signupContainer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-block: 1rem;
+  gap: 1rem;
+}
+
+.loginPage .form-field form .signupContainer input {
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  padding-inline-start: 3rem;
+  padding-block: .8rem;
+  font-size: 20px;
+  font-family: var(--inter);
+  font-weight: 500;
+  color: hsla(0, 0%, 74%, 1);
+  margin-bottom: 1rem;
+}
+
+.loginPage .form-field form .signupContainer img {
+  position: absolute;
+  left: 10px;
+  top: 16%;
+}
+
+.loginPage main .form-field p.err-mssg {
+  font-family: var(--inter);
+  font-style: italic;
+  font-weight: 400;
+  align-self: flex-end;
+  color: var(--red);
+  font-size: 16px;
+}
+
+.passVisibility {
+  position: relative;
+} 
+
+.passVisibility .showPword {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: var(--green);
+}
+
+.signUpPage .passVisibility .showPword {
+  top: 32%;
+}
+
+.loginPage main .form-field form button {
+  font-family: var(--inter);
+  font-weight: 600;
+  font-size: 1.2rem;
+  background: var(--dark-blue);
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  padding: .5rem;
+  color: var(--white);
+  margin-block-start: 1rem;
+  align-self: flex-end;
+}
+
+.loginPage main .form-field p.terms {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: var(--inter);
+  color: var(--light-ash);
 }
 
 /* Desktop Styles */
@@ -784,4 +929,20 @@ footer p.copyRight {
   font-weight: 400;
   color: var(--footer-ash);
   margin-block-start: 2rem;
+}
+@media(min-width: 768px){
+  /* Login Page */
+  .loginPage main h1 {
+    font-size: 3.2rem;
+  }
+
+  .loginPage main .form-field {
+    margin-block: 2rem;
+    max-width: 500px;
+  }
+
+  .loginPage main button {
+    margin-block-start: 2rem;
+    margin-inline-end: 8rem;
+  }
 }

@@ -4,8 +4,13 @@ import { useNavigate } from "react-router-dom";
 import cityPic from "../../assets/icons/city.svg";
 import builderWrap from "../../assets/icons/builder.svg";
 import tick from "../../assets/icons/tick.svg";
-import clock from "../../assets/icons/clock.svg"
+import clock from "../../assets/icons/clock.svg";
 import constructionWorkers from "../../assets/images/constructionWorkers.jpg";
+import carpenter from "../../assets/images/carpenter.jpg";
+import painter from "../../assets/images/painter.jpg";
+import domWorkers from "../../assets/images/domWorker.jpg";
+import warehouseWorkers from "../../assets/images/warehouseWorker.jpg";
+import farmsteadWorkers from "../../assets/images/farmsteadWorker.jpg";
 
 const HomeScreen = () => {
   const history = useNavigate();
@@ -32,23 +37,23 @@ const HomeScreen = () => {
               <p>Construction Workers</p>
             </div>
             <div className="workerTile">
-              <img src={constructionWorkers} alt="Carpenters & Wood" />
+              <img src={carpenter} alt="Carpenters & Wood" />
               <p>Carpenters & Wood</p>
             </div>
             <div className="workerTile">
-              <img src={constructionWorkers} alt="Painters & Screeders" />
+              <img src={painter} alt="Painters & Screeders" />
               <p>Painters & Screeders</p>
             </div>
             <div className="workerTile">
-              <img src={constructionWorkers} alt="Domestic Workers" />
+              <img src={domWorkers} alt="Domestic Workers" />
               <p>Domestic Workers</p>
             </div>
             <div className="workerTile">
-              <img src={constructionWorkers} alt="Warehouse Workers" />
+              <img src={warehouseWorkers} alt="Warehouse Workers" />
               <p>Warehouse Workers</p>
             </div>
             <div className="workerTile">
-              <img src={constructionWorkers} alt="Farmstead Workers" />
+              <img src={farmsteadWorkers} alt="Farmstead Workers" />
               <p>Farmstead Workers</p>
             </div>
           </div>

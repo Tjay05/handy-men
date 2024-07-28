@@ -9,6 +9,7 @@ import LoginScreen from "./pages/account/Login"
 import HomeScreen from "./pages/home/Index"
 import LandingPage from "./pages/landingPage/Index"
 import HireWorkers from "./pages/workers/HireWorkers"
+import GeneralWorkers from "./pages/workers/Index"
 
 
 const router = createBrowserRouter(
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
       <Route element={<Navbar/>}>
         <Route path="Home" element={<HomeScreen/>} />
         <Route path="Hire-Workers" element={<HireWorkers/>}/>
+        <Route path="Workers" element={<GeneralWorkers/>} />
       </Route>
     </Route>
   )

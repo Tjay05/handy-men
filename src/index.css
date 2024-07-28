@@ -1048,6 +1048,7 @@ section#typeofWorkers .workersSection .workerTile p {
   font-size: 3.8rem;
   color: var(--green);
   margin-block: 1.5rem;
+  padding-bottom: .3rem;
 }
 
 #workers > .container .filterWrap {

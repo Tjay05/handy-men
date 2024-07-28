@@ -56,7 +56,7 @@ const Navbar = () => {
               <ul className="navbar">
                 <li><NavLink to='Home'>Home</NavLink></li>
                 <li><NavLink to='/Hire-Workers' >Hire Workers</NavLink></li>
-                <li><NavLink to=''>My Workers</NavLink></li>
+                <li><NavLink to='/Workers'>My Workers</NavLink></li>
                 <li><NavLink to=''>Payments</NavLink></li>
                 <li><NavLink to=''>Help & FAQs</NavLink></li>
               </ul>

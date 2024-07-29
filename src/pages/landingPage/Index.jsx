@@ -115,7 +115,7 @@ const LandingPage = () => {
           <div className="container">
             <div className="navContainer">
               <ul className="navbar">
-                <li><a href="#benefits">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li>About Us</li>
                 <li>Services</li>
                 <li>Testimonials</li>

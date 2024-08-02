@@ -119,7 +119,7 @@ const LandingPage = () => {
                 <li><a href="#aboutUs">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
-                <li>Contact us</li>
+                <li><a href="#contact">Contact us</a></li>
               </ul>
               <button onClick={() => history('Login')}>Login</button>
             </div>
